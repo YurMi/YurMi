@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class='home'>
+        <div class="wrapper">
+            <div class="home_start_popup start_popup">
+                <div class="start_popup__body">
+                    <h2>Спасибо, что пользуетесь нашими услугами!😊</h2>
+                    <p>Хорошего Вам Праздника!🥳</p>
+                    <div><span class="hand">🖐</span></div>
+                </div>
+            </div>
+            <div class='conteiner'>
+                <form action='#' id='form' class='form' name='form'>
+                    <div class="home__input">
+                        <label for="input_name">Как вас зовут?</label>
+                        <input id='input_name' type='text' name='name' placeholder='' class='input_name'
+                            onChange="chackForm()"></input>
+                    </div>
+                    <div class="home__input">
+                        <label for="input_serName">Ваша Фамилия?</label>
+                        <input id='input_serName' type='text' name='serName' placeholder='' class='input_serName'
+                            onChange="chackForm()"></input>
+                    </div>
+                    <div class="home__input">
+                        <label for="input_age">Cколько вам полных лет?</label>
+                        <input id='input_age' type='text' name='age' placeholder='' class='input_age'
+                            onChange="chackForm()"></input>
+                    </div>
+                    <div class="home__input">
+                        <label for="input_boyFriend">Как зовут вашего парня?</label>
+                        <input id='input_boyFriend' type='text' name='boyFriend' placeholder='' class='input_boyFriend'
+                            onChange="chackForm()"></input>
+                    </div>
+                    <div class="home__input">
+                        <label for="input_contactBook">Как вы подписаны в телефоной книге вашего парня?</label>
+                        <input id='input_contactBook' type='text' name='contactBook' placeholder=''
+                            class='input_contactBook' onChange="chackForm()"></input>
+                    </div>
+                    <div class="home__button">
+                        <button disabled class="btn">Отправить</button>
+                    </div>
+                </form>
+            </div>
+            <div class="popup_gift hidden">
+                <div class="bg__img">
+                    <img src="./img/—Pngtree—confetti ribbons floating_132052.png" alt="">
+                </div>
+                <div class="bg__img__2">
+                    <img src="./img/—Pngtree—fireworks color festive_3843337.png" alt="">
+                </div>
+                <div class="popup_gift__body">
+                    <div class="popup_gift__qr_img">
+                        <img src="./img/qr_code.png" alt="">
+                    </div>
+                    <div class="popup_link">
+                        <p>or you can use the link</p>
+                        <a href="https://www.udemy.com/course/web-figma-ui/learn/lecture/28577637#overview"
+                            target="_blank">Move
+                            to...</a>
+                    </div>
+                    <p class="login">Your Login: <span>mitrofanov499399@gmail.com</span> </p>
+                    <p class="pass">Your Password: <span>-fuyExYZ9@%SNi-</span> </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

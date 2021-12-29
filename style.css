@@ -1,0 +1,202 @@
+*{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
+}
+.conteiner{
+    max-width: 500px;
+    margin: 0 auto;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background:url('./img/gerbera-flower-macro.jpg') no-repeat center/cover;
+}
+.wrapper{
+    overflow: hidden;
+}
+.home {
+    position: relative;
+    padding: 100px 0px 0px 0px;
+    height: 100%;
+    background-color: rgba(10, 9, 9, 0.65);
+}
+.home__input {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 20px 0px;
+}
+label{
+    font-family: 'Stick';
+    color: rgb(251, 251, 251);
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0px 0px 5px 0px;
+    text-align: center;
+}
+.home__input input{
+    background-color: lightyellow;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+.home__button button:disabled{
+    background-color: grey;
+    color: #fff;
+    cursor: no-drop;
+}
+.home__button button{
+    width: 100%;
+    border-radius: 10px;
+    background-color: tomato;
+    color: #000;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+/* !Start popup */
+.home_start_popup {
+    font-family: 'Marck Script';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(246, 130, 188);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: 2s ease;
+}
+.home_start_popup.hidden{
+    opacity: 0;
+    top: -1000%;
+}
+.start_popup__body {
+    background: rgb(0,0,0);
+    background: linear-gradient(29deg, rgba(0,0,0,0.6292892156862745) 35%, rgba(199,196,24,1) 100%);
+    padding: 50px 25px;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+.start_popup__body h2{
+    font-size: 50px;
+}
+.start_popup__body p{
+    font-size: 20px;
+}
+
+.hand{
+    display: inline-block;
+    font-size: 50px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.hand:hover{
+    transform: scale(2);
+}
+/* /Start popup */
+/* !Gift popup */
+    .popup_gift {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        /* background-color: rgb(209, 201, 201); */
+        background-color: rgb(65, 27, 27);
+        transition: 2s ease;
+    }
+    .popup_gift.hidden{
+        opacity: 0;
+        pointer-events: none;
+    }
+    .bg__img{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .bg__img::before{
+        content: '';
+        position: absolute;
+        top: 200px;
+        left: 360px;
+        width: 100%;
+        height: 100%;
+        background-image: url('./img/—Pngtree—confetti\ ribbons\ floating_132052.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bg__img::after{
+        content: '';
+        position: absolute;
+        top: 200px;
+        right: 1000px;
+        width: 100%;
+        height: 100%;
+        background-image: url('./img/—Pngtree—confetti\ ribbons\ floating_132052.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bg__img__2 img{
+        position: absolute;
+        top: 0;
+        left: -60px;
+        width: 100%;
+        height: 100%;
+    }
+    .popup_gift__body {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(246, 246, 246);
+        padding: 30px 30px;
+        border-radius: 10px;
+        z-index: 10;
+    }
+    .popup_gift__qr_img {
+        text-align: center;
+        margin: 0px 0px 30px 0px;
+    }
+    .popup_link{
+        margin: 0px 0px 10px 0px;
+    }
+    .popup_link a{
+        text-decoration: none;
+        color: green;
+        font-size: 24px;
+    }
+    .login {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 10px 0px;
+    }
+    .login span{
+        display: inline-block;
+        text-decoration:dashed;
+    }
+    .login span,
+    .pass span{
+        font-size: 24px;
+        color: green;
+    }
+    .pass {
+        display: flex;
+        flex-direction: column;
+    }
+    .pass span{
+        display: inline-block;
+        text-decoration:dashed;
+    }
+/* /Gift popup */
